@@ -7,7 +7,7 @@ command: >-
 inputs:
   training_data: 
     type: uri_folder 
-    path: azureml:diabetes-dev-folder:@latest
+    path: https://amldiabestorage139bc1bfc.blob.core.windows.net/azureml-blobstore-0be2df97-bc00-41e1-a6fd-e662a2acc1e4/LocalUpload/534e63694838be564a42c83cb065f8fd/data/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:testdev-vm
