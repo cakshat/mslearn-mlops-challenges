@@ -16,6 +16,7 @@ jobs:
       with:
         creds: ${{secrets.AZURE_CREDENTIALS}}
     - name: Trigger AML job created in challenge1
-      run: az ml job create --file ./chal1.1/src/job.yml
+      run: az ml job create --file job.yml --resource-group rg-mlops-challenges --workspace-name 
+ws-mlops-challenges
 
 
