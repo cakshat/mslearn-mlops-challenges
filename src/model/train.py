@@ -39,7 +39,7 @@ def get_csvs_df(path):
 
 def split_data(df):
     mlflow.autolog()
-    X, y = df[['Pregnancies', 'PlasmaGlucose', 'DiastolicBloodPressure', 
+    X, y = df[['Pregnancies', 'PlasmaGlucose', 'DiastolicBloodPressure',
                'TricepsThickness', 'SerumInsulin', 'BMI', 'DiabetesPedigree',
                'Age']].values, df['Diabetic'].values
     X_train, X_test, y_train, y_test = train_test_split(
