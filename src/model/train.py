@@ -1,9 +1,11 @@
 # Import libraries
+!pip install mlflow
 
 import argparse
 import glob
 import os
 import mlflow
+import mlflow.sklearn
 
 
 import pandas as pd
