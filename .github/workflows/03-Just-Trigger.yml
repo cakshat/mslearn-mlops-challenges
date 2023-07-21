@@ -27,5 +27,5 @@ jobs:
           python -m pip install pytest
       - name: Run Pytest unit tests
         run: |
-          pytest tests/datasets/test_train.py 
+          pytest tests/datasets/
           
