@@ -10,6 +10,8 @@ jobs:
       - name: Placeholder
         run: |
           echo "Will add code checks here in next challenge"
+      - name: Check out repo
+        uses: actions/checkout@main
       - name: Use Python version 3.8
         uses: actions/setup-python@v3
         with:
@@ -22,5 +24,5 @@ jobs:
           flake8 src/model/
       - name: Run Pytest unit tests
         run: |
-          test_train.py src/model/
+          python tests/datasets/test_train.py 
           
