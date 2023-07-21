@@ -3,7 +3,6 @@
 import argparse
 import glob
 import os
-import mlflow
 
 
 import pandas as pd
@@ -38,7 +37,6 @@ def get_csvs_df(path):
 # TO DO: add function to split data
 
 def split_data(df):
-    mlflow.autolog()
     X, y = df[['Pregnancies', 'PlasmaGlucose', 'DiastolicBloodPressure',
                'TricepsThickness', 'SerumInsulin', 'BMI', 'DiabetesPedigree',
                'Age']].values, df['Diabetic'].values
