@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: https://github.com/cakshat/mslearn-mlops-challenges/edit/main/src/model
+code: model
 command: >-
   python train.py
   --training_data ${{inputs.training_data}}
