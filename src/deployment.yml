@@ -1,0 +1,9 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+name: deployment
+endpoint_name: my-endpoint
+model:
+  path: azureml:my-model:@latest
+environment:
+  conda_file: azureml:model-evaluation:@latest
+instance_type: Standard_DS3_v2
+instance_count: 1
