@@ -1,4 +1,4 @@
-name: GitHub Actions workflow-> triggered by changes being pushed to the main branch, with two jobs experiment and production
+name: Experiment and Production
 
 on: 
   pull_request:
