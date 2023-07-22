@@ -12,6 +12,10 @@ jobs:
         uses: actions/checkout@main
       - name: Install az ml extension
         run: az extension add -n ml -y
+      - name: Azure login
+        uses: azure/login@v1
+        with:
+          creds: ${{secrets.AZURE_CREDENTIALS}}
       - name: Clone repo
         run: git clone https://github.com/cakshat/mslearn-mlops-challenges/ chal1.1
       - name: Create Endpoint with yml file
