@@ -21,4 +21,4 @@ jobs:
       - name: Create Endpoint with yml file
         run: az ml online-endpoint create --file ./src/create-endpoint.yml --resource-group rg-mlops-challenges --workspace-name ws-mlops-challenges-2
       - name: Deploy model to this endpoint
-        run: az ml online-deployment create --file ./src/deployment.yaml --resource-group rg-mlops-challenges --workspace-name ws-mlops-challenges-2
+        run: az ml online-deployment create --file ./src/deployment.yml --resource-group rg-mlops-challenges --workspace-name ws-mlops-challenges-2
