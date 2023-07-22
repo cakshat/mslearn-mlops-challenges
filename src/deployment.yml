@@ -4,7 +4,7 @@ endpoint_name: my-endpoint
 model:
   name: deployed_model
   version: 1
-  path: my-model/model
+  path: azureml://locations/centralindia/workspaces/62d8d7c4-f28d-4150-a65d-87c3ff444525/models/my-model/versions/1
   type: mlflow_model
 # model: azureml:my-model:@latest
 # environment: azureml:model-evaluation:@latest
