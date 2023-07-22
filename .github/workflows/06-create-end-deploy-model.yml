@@ -1,1 +1,20 @@
+name: Create endpoint and deploy model
 
+on:
+  workflow_dispatch:
+
+jobs:
+  create-endpoint-and-deploy-model:
+    name: Create endpoint and deploy model
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@main
+      - name: Install az ml extension
+        run: az extension add -n ml -y
+      - name: Clone repo
+        run: git clone https://github.com/cakshat/mslearn-mlops-challenges/ chal1.1
+      - name: Create Endpoint with yml file
+        run: az ml online-endpoint create --file ./src/create-endpoint.yml --resource-group rg-mlops-challenges --workspace-name ws-mlops-challenges-2
+      - name: Deploy model to this endpoint
+        run: az ml online-deployment create --file ./src/deployment.yaml --resource-group rg-mlops-challenges --workspace-name ws-mlops-challenges-2
