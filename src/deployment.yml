@@ -4,7 +4,7 @@ endpoint_name: my-endpoint
 model:
   name: my-model
   version: 1
-  path: azureml:/subscriptions/69c5c611-5e75-4bca-869e-c5da504a8d27/resourceGroups/rg-mlops-challenges/providers/Microsoft.MachineLearningServices/workspaces/ws-mlops-challenges-2/models/my-model
+  path: azureml://subscriptions/69c5c611-5e75-4bca-869e-c5da504a8d27/resourceGroups/rg-mlops-challenges/workspaces/ws-mlops-challenges-2/datastores/workspaceartifactstore/paths/ExperimentRun/dcid.silver_tongue_c2sw8rwhc2/model
   type: mlflow_model
 # model: azureml:my-model:@latest
 # environment: azureml:model-evaluation:@latest
